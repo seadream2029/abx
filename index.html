@@ -1,0 +1,257 @@
+<html>
+ <head> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>WebCat</title> 
+  <script src="js/wc-3.0.6.min.js"></script> 
+  <script src="js/jq.js"></script> 
+  <style>
+  
+          *{
+            margin: 0;
+            padding: 0;
+            }
+          .div1{
+            background-color: White;
+            width: 100vw;
+            height: 200vw;
+            background-image: url("img/7ft_I1QQ.jpeg");
+            background-size: cover;
+            }
+          img{
+            margin-left: 50px;
+            margin-top: 30px;
+            }
+          span{
+            color: white;
+            }
+          .span1{
+            position:absolute;
+            left: 58px;
+            top: 110px;
+            }
+          .span2{
+            position:absolute;
+            left: 173px;
+            top: 110px;
+            }
+          .span3{
+            position:absolute;
+            left: 263px;
+            top: 110px;
+            }
+          .span4{
+            position:absolute;
+            left: 53px;
+            top: 195px;
+            }
+          .span5{
+            position: absolute;
+            left: 145px;
+            top: 195px;
+            }
+          .h21{
+            text-align: center;
+            color:white;
+            }
+          .div2{
+            background: linear-gradient(to right bottom,skyblue,blue,yellow,red);
+            width: 50vw;
+            height: 50px;
+            position: relative;
+            top: 45px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            left: 50px;
+            font-size: 25px;
+            text-align: center;
+            border-color: green;
+            border-style: outset;
+            border-width: 2px;
+            z-index:11;
+            }
+          .span9{
+            position: relative;
+            top: -10px;
+            }
+          .span10{
+            position:absolute;
+            left: 273px;
+            top: 195px;
+            }
+          .p1{
+            position: relative;
+            top: 43px;
+            left: -38px;
+            }
+          .div3{
+            text-align: center;
+            }
+          .div4{
+            width: 80vw;
+            height: 100vw;
+            background-color:gray;
+            position:absolute;
+            left:10vw;
+            top:150px;
+            display:none;
+            z-index:12;
+            }
+          .p2{
+            text-align:right;
+            font-size:20px;
+            margin-right:10px;
+            color:lack;
+            }
+          .p2:hover{
+            color:Blue;
+            }
+          .span11{
+            font-size:20px;
+            border:1px black solid;
+            }
+          .div5{
+            width: 50vw;
+            height: 50px;
+            border-top-left-radius: 2em;
+            border-top-right-radius: 2em;
+            border-bottom-left-radius: 2em;
+            border-bottom-right-radius: 2em;
+            border-color: #545453;
+            border-style: outset;
+            border-width: 2px;
+            position:absolute;
+            z-index:10;
+            left:50px;
+            top:245px;
+            background: linear-gradient(green,yellowgreen,yellow,orange);
+            transition: 1.5s;
+            }
+          .span12{
+            font-size:25px;
+            color:black;
+            position:absolute;
+            left:150px;
+            top:4px;
+            animation-name:ZD;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+            animation-play-state:paused;
+            animation-timing-function:linear;
+            }
+          @keyframes ZD {
+            0%{
+              transform:rotate(0deg);
+              }
+            100%{
+              transform:rotate(360deg);
+              }
+            }
+      </style> 
+ </head> 
+ <body id="v1"> 
+  <div class="div1" id="div1"> 
+   <h2 id="v2" class="h21"> <span id="spana">7</span> ：<span id="spanb">11</span> ：<span id="spanc">7</span> </h2> 
+  </script>
+</head>
+<body onload="showAgreement();">
+    <!DOCTYPE html>
+
+     <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #video-player, #audio-player {
+            margin-top: 20px;
+            width: 50%;
+        }
+    </style>
+    <script>
+        function playVideo() {
+            var fileInput = document.getElementById("file-input");
+            var file = fileInput.files[0];
+            if (file.type.startsWith("video/")) {
+                var videoPlayer = document.getElementById("video-player");
+                videoPlayer.src = URL.createObjectURL(file);
+                videoPlayer.style.display = "block";
+                var audioPlayer = document.getElementById("audio-player");
+                audioPlayer.style.display = "none";
+            } else if (file.type.startsWith("audio/")) {
+                var audioPlayer = document.getElementById("audio-player");
+                audioPlayer.src = URL.createObjectURL(file);
+                audioPlayer.style.display = "block";
+                var videoPlayer = document.getElementById("video-player");
+                videoPlayer.style.display = "none";
+            } else {
+                alert("请选择一个视频或音频文件！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="player">
+        <h1>音视频播放器</h1>
+        <input type="file" id="file-input" accept="video/*, audio/*">
+        <button onclick="playVideo()">播放</button>
+        <video id="video-player" controls></video>
+        <audio id="audio-player" controls></audio>
+    </div>
+    <h1>其他网站</h1>
+  <a href="https://baidu.com" id="v14">百度</a>
+  <a href="https://www.douyin.com/?is_from_mobile_home=1" id="v19">抖音</a>
+  <a href="https://codbt.kesug.com/Applet/Applet.html" id="v15">游戏</a>
+  <a href="https://codbt.kesug.com/Applet/Applet3.html" id="v16">工具</a>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>弹出对话框</title>
+    <script>
+        function showAgreement() {
+            var result = confirm("大家好，欢迎来到我的网站1.0版本的！\n\n1. 网站中有一部分会使用一些其他人的源码，还有其他人的网址，不喜勿喷。\n\n2. 希望不会误解，有些不会才会使用其他人的源码和网址，我是一名新手小白，有些还不会。\n\n3. 有时候主页面图片是黑色的，但是进入之后就恢复了，这也是我在制作的一个缺陷。\n\n4. 音视频播放器可以播放视频和音乐，但不能上传照片文档安装包和压缩包。\n\n5. 其他网站可以当成我的网站里面的其他网页，部署是关于免费上传源码并生成为网站/网页，从我的网页中的其他网站返回主页面然后提示还会出来，不喜勿喷。\n\n6. 点击次数工具可以使用连点器，使用连点器有点卡顿，也可以使用手指点击，当成一个小游戏也可以。\n\n7. 就是时间不会走动，实际时间为手机上的标准时间。\n\n感谢大家的支持！");
+            if (result) {
+                alert("感谢您的支持！即将启动...");
+            } else {
+                alert("很抱歉，我一定会改进的，回复我在聊天大厅。");
+                window.location.href = "";
+            
+            }
+        }
+    </script>
+</head>
+<body onload="showAgreement();">
+
+<h1>点击次数工具</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <button onclick="countClicks()">点击一下</button>
+  <p id="clickCount">累计点击次数: 0</p>
+
+  <script>
+    let clickCount = 0;
+
+    function countClicks() {
+      clickCount++;
+      document.getElementById("clickCount").innerHTML = "累计点击次数: " + clickCount;
+    }
+  </script>
+</body>
+
+</html>
